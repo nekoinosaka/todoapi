@@ -1,0 +1,40 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userprefs
+
+# Ignore IDE specific files
+.vs/
+.idea/
+*.swp
+*.swo
+
+# Ignore NuGet packages directory
+packages/
+
+# Ignore local development files
+appsettings.Development.json
+
+# Ignore local launch settings
+Properties/launchSettings.json
+
+# Ignore compiled files
+*.dll
+*.pdb
+*.exe
+
+# Ignore logs and diagnostics
+logs/
+*.log
+*.nlog
+
+# Ignore temp files
+*.tmp
+*.temp
+
+# Ignore macOS specific files
+.DS_Store
