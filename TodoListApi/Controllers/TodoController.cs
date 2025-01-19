@@ -45,15 +45,15 @@ namespace TodoListApi.Controllers
                 return BadRequest("Invalid data");
             }
 
-            _repository.Update(item);
-            return NoContent();
+            var updatedItem = _repository.Update(item);
+            return Ok(updatedItem);
         }
         // DELETE: api/Todo/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             _repository.Delete(id);
-            return NoContent();
+            return Ok();
         }
     }
 }
